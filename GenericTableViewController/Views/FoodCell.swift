@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SoccerCell: BaseTableViewCell<Food> {
+class FoodCell: BaseTableViewCell<Food> {
 
     override func awakeFromNib() {
         super.awakeFromNib()

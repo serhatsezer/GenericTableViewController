@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FoodListViewController: BaseTableViewSearchController<SoccerCell, Food> {
+class FoodListViewController: BaseTableViewSearchController<FoodCell, Food> {
     
     let soccerPlayers = [Food(name: "Menemen", price: 10.0),
                          Food(name: "Manti", price: 15.0),
