@@ -17,9 +17,9 @@
 		0A152723211D8F140023A3FD /* GenericTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A152722211D8F140023A3FD /* GenericTableViewDataSource.swift */; };
 		0A152725211D9C920023A3FD /* ModelRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A152724211D9C920023A3FD /* ModelRepresentable.swift */; };
 		0A152727211D9CD30023A3FD /* BaseTableViewSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A152726211D9CD30023A3FD /* BaseTableViewSearchController.swift */; };
-		0A15272A211D9F760023A3FD /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A152729211D9F760023A3FD /* Food.swift */; };
-		0A15272D211D9FDA0023A3FD /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A15272C211D9FDA0023A3FD /* FoodCell.swift */; };
 		0A152732211DA0B30023A3FD /* FoodListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A152731211DA0B30023A3FD /* FoodListViewController.swift */; };
+		0A9C8503214550A800CB17D4 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C8502214550A800CB17D4 /* Food.swift */; };
+		0A9C8505214550B300CB17D4 /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C8504214550B300CB17D4 /* FoodCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,9 +35,9 @@
 		0A152722211D8F140023A3FD /* GenericTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewDataSource.swift; sourceTree = "<group>"; };
 		0A152724211D9C920023A3FD /* ModelRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelRepresentable.swift; sourceTree = "<group>"; };
 		0A152726211D9CD30023A3FD /* BaseTableViewSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewSearchController.swift; sourceTree = "<group>"; };
-		0A152729211D9F760023A3FD /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
-		0A15272C211D9FDA0023A3FD /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
 		0A152731211DA0B30023A3FD /* FoodListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListViewController.swift; sourceTree = "<group>"; };
+		0A9C8502214550A800CB17D4 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Food.swift; path = GenericTableViewController/Example/Model/Food.swift; sourceTree = SOURCE_ROOT; };
+		0A9C8504214550B300CB17D4 /* FoodCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodCell.swift; path = GenericTableViewController/Example/View/FoodCell.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,57 +76,22 @@
 			path = GenericTableViewController;
 			sourceTree = "<group>";
 		};
-		0A152728211D9F5A0023A3FD /* Models */ = {
+		0A15272E211DA0390023A3FD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				0A152729211D9F760023A3FD /* Food.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		0A15272B211D9FBF0023A3FD /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				0A15272C211D9FDA0023A3FD /* FoodCell.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		0A15272E211DA0390023A3FD /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				0A152726211D9CD30023A3FD /* BaseTableViewSearchController.swift */,
 				0A152731211DA0B30023A3FD /* FoodListViewController.swift */,
 			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		0A15272F211DA0580023A3FD /* DataSources */ = {
-			isa = PBXGroup;
-			children = (
-				0A152722211D8F140023A3FD /* GenericTableViewDataSource.swift */,
-			);
-			path = DataSources;
-			sourceTree = "<group>";
-		};
-		0A152730211DA06E0023A3FD /* Reusable */ = {
-			isa = PBXGroup;
-			children = (
-				0A15271E211D8D000023A3FD /* Reusable.swift */,
-				0A152724211D9C920023A3FD /* ModelRepresentable.swift */,
-				0A152720211D8ED00023A3FD /* BaseTableViewCell.swift */,
-			);
-			path = Reusable;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		0A9C84FE21454B1900CB17D4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				0A15272B211D9FBF0023A3FD /* Views */,
-				0A152728211D9F5A0023A3FD /* Models */,
-				0A15272E211DA0390023A3FD /* Controllers */,
-				0A15272F211DA0580023A3FD /* DataSources */,
-				0A152730211DA06E0023A3FD /* Reusable */,
+				0A152726211D9CD30023A3FD /* BaseTableViewSearchController.swift */,
+				0A152722211D8F140023A3FD /* GenericTableViewDataSource.swift */,
+				0A15271E211D8D000023A3FD /* Reusable.swift */,
+				0A152724211D9C920023A3FD /* ModelRepresentable.swift */,
+				0A152720211D8ED00023A3FD /* BaseTableViewCell.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -134,6 +99,9 @@
 		0A9C84FF21454B2600CB17D4 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				0A9C85012145509500CB17D4 /* View */,
+				0A9C85002145508A00CB17D4 /* Model */,
+				0A15272E211DA0390023A3FD /* Controller */,
 				0A15270C211D88140023A3FD /* AppDelegate.swift */,
 				0A15270E211D88150023A3FD /* ViewController.swift */,
 				0A152710211D88150023A3FD /* Main.storyboard */,
@@ -142,6 +110,22 @@
 				0A152718211D88150023A3FD /* Info.plist */,
 			);
 			path = Example;
+			sourceTree = "<group>";
+		};
+		0A9C85002145508A00CB17D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A9C8502214550A800CB17D4 /* Food.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A9C85012145509500CB17D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A9C8504214550B300CB17D4 /* FoodCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,15 +200,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A9C8503214550A800CB17D4 /* Food.swift in Sources */,
+				0A9C8505214550B300CB17D4 /* FoodCell.swift in Sources */,
 				0A152721211D8ED00023A3FD /* BaseTableViewCell.swift in Sources */,
-				0A15272A211D9F760023A3FD /* Food.swift in Sources */,
 				0A152725211D9C920023A3FD /* ModelRepresentable.swift in Sources */,
 				0A152732211DA0B30023A3FD /* FoodListViewController.swift in Sources */,
 				0A15271F211D8D000023A3FD /* Reusable.swift in Sources */,
 				0A152723211D8F140023A3FD /* GenericTableViewDataSource.swift in Sources */,
 				0A15270F211D88150023A3FD /* ViewController.swift in Sources */,
 				0A15270D211D88140023A3FD /* AppDelegate.swift in Sources */,
-				0A15272D211D9FDA0023A3FD /* FoodCell.swift in Sources */,
 				0A152727211D9CD30023A3FD /* BaseTableViewSearchController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

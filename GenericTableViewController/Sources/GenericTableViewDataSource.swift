@@ -34,14 +34,6 @@ final class GenericTableViewDataSource<V: BaseTableViewCell<T> , T: ModelReprese
     private func getModel(at indexPath: IndexPath) -> T {
         return isSearchActive ? searchResults[indexPath.item] : models[indexPath.item]
     }
-    
-    // external function for searching
-    func search(query: String) {
-        isSearchActive = !query.isEmpty
-        searchResults = models.filter {
-            let queryToFind = $0.modelDescription.range(of: query, options: NSString.CompareOptions.caseInsensitive)
-            return (queryToFind != nil)
-        }
-    }
+  
 }
 
