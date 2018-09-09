@@ -13,6 +13,6 @@ This generic table view controller can be used for different models, different c
   s.source           = { :git => 'https://github.com/serhatsezer/GenericTableViewController.git', :tag => s.version.to_s }
  
   s.ios.deployment_target = '10.0'
-  s.source_files = 'GenericTableViewController/GenericTableViewController'
+  s.source_files = 'GenericTableViewController/Sources/'
  
 end
