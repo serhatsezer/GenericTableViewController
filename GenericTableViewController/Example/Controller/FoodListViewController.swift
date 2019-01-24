@@ -10,7 +10,7 @@ import UIKit
 
 class FoodListViewController: BaseTableViewSearchController<FoodCell, Food> {
     
-    let soccerPlayers = [Food(name: "Menemen", price: 10.0),
+    let foods = [Food(name: "Menemen", price: 10.0),
                          Food(name: "Manti", price: 15.0),
                          Food(name: "Lahmacun", price: 20.0),
                          Food(name: "Kebab", price: 50.0),
