@@ -20,6 +20,6 @@ class FoodListViewController: BaseTableViewSearchController<FoodCell, Food> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.models = soccerPlayers
+        self.models = foods
     }
 }
